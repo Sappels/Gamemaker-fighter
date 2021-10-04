@@ -1,6 +1,6 @@
 // Reducing character size when hit
 
-if(image_xscale >= 0) 
+if(image_xscale > 0 || image_yscale > 0) 
 {
 	
 image_xscale -= 0.1;
