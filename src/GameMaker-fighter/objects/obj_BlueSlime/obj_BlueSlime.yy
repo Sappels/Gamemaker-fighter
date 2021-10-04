@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "BlueSlime",
-    "path": "sprites/BlueSlime/BlueSlime.yy",
+    "name": "spr_BlueSlime",
+    "path": "sprites/spr_BlueSlime/spr_BlueSlime.yy",
   },
   "solid": false,
   "visible": true,

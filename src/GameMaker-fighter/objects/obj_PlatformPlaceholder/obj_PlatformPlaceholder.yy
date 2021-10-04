@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "PlatformPlaceholder",
-    "path": "sprites/PlatformPlaceholder/PlatformPlaceholder.yy",
+    "name": "spr_PlatformPlaceholder",
+    "path": "sprites/spr_PlatformPlaceholder/spr_PlatformPlaceholder.yy",
   },
   "solid": false,
   "visible": true,

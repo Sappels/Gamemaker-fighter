@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "GreenSlime",
-    "path": "sprites/GreenSlime/GreenSlime.yy",
+    "name": "spr_GreenSlime",
+    "path": "sprites/spr_GreenSlime/spr_GreenSlime.yy",
   },
   "solid": false,
   "visible": true,
