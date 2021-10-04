@@ -1,7 +1,11 @@
 {
   "resources": [
+    {"id":{"name":"obj_GreenSlime","path":"objects/obj_GreenSlime/obj_GreenSlime.yy",},"order":1,},
     {"id":{"name":"GreenSlime","path":"sprites/GreenSlime/GreenSlime.yy",},"order":0,},
+    {"id":{"name":"PlatformPlaceholder","path":"sprites/PlatformPlaceholder/PlatformPlaceholder.yy",},"order":2,},
     {"id":{"name":"BlueSlime","path":"sprites/BlueSlime/BlueSlime.yy",},"order":1,},
+    {"id":{"name":"obj_BlueSlime","path":"objects/obj_BlueSlime/obj_BlueSlime.yy",},"order":0,},
+    {"id":{"name":"obj_PlatformPlaceholder","path":"objects/obj_PlatformPlaceholder/obj_PlatformPlaceholder.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
