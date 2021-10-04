@@ -1,11 +1,13 @@
 {
   "resources": [
     {"id":{"name":"obj_GreenSlime","path":"objects/obj_GreenSlime/obj_GreenSlime.yy",},"order":1,},
+    {"id":{"name":"obj_GreenSlimeBall","path":"objects/obj_GreenSlimeBall/obj_GreenSlimeBall.yy",},"order":3,},
     {"id":{"name":"spr_GreenSlime","path":"sprites/spr_GreenSlime/spr_GreenSlime.yy",},"order":0,},
     {"id":{"name":"spr_PlatformPlaceholder","path":"sprites/spr_PlatformPlaceholder/spr_PlatformPlaceholder.yy",},"order":2,},
     {"id":{"name":"spr_BlueSlimeBall","path":"sprites/spr_BlueSlimeBall/spr_BlueSlimeBall.yy",},"order":4,},
     {"id":{"name":"spr_BlueSlime","path":"sprites/spr_BlueSlime/spr_BlueSlime.yy",},"order":1,},
     {"id":{"name":"obj_BlueSlime","path":"objects/obj_BlueSlime/obj_BlueSlime.yy",},"order":0,},
+    {"id":{"name":"obj_BlueSlimeBall","path":"objects/obj_BlueSlimeBall/obj_BlueSlimeBall.yy",},"order":4,},
     {"id":{"name":"spr_GreenSlimeBall","path":"sprites/spr_GreenSlimeBall/spr_GreenSlimeBall.yy",},"order":3,},
     {"id":{"name":"obj_PlatformPlaceholder","path":"objects/obj_PlatformPlaceholder/obj_PlatformPlaceholder.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
