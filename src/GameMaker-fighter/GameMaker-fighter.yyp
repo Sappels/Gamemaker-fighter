@@ -2,7 +2,6 @@
   "resources": [
     {"id":{"name":"obj_GreenSlime","path":"objects/obj_GreenSlime/obj_GreenSlime.yy",},"order":1,},
     {"id":{"name":"spr_GreenSlime","path":"sprites/spr_GreenSlime/spr_GreenSlime.yy",},"order":0,},
-    {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},"order":3,},
     {"id":{"name":"spr_PlatformPlaceholder","path":"sprites/spr_PlatformPlaceholder/spr_PlatformPlaceholder.yy",},"order":2,},
     {"id":{"name":"spr_BlueSlimeBall","path":"sprites/spr_BlueSlimeBall/spr_BlueSlimeBall.yy",},"order":4,},
     {"id":{"name":"spr_BlueSlime","path":"sprites/spr_BlueSlime/spr_BlueSlime.yy",},"order":1,},
