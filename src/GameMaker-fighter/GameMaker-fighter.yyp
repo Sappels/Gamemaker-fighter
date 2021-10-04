@@ -1,5 +1,7 @@
 {
   "resources": [
+    {"id":{"name":"GreenSlime","path":"sprites/GreenSlime/GreenSlime.yy",},"order":0,},
+    {"id":{"name":"BlueSlime","path":"sprites/BlueSlime/BlueSlime.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
