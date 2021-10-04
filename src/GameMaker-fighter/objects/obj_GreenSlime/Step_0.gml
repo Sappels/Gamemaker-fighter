@@ -38,3 +38,5 @@ if (place_meeting(x,y+vsp,obj_PlatformPlaceholder))
 	vsp = 0;
 }
 x = x + vsp;
+
+
