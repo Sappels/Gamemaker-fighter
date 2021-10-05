@@ -34,9 +34,9 @@ if keyboard_check(ord("S"))
 
 
 //Vertical collision (work in progress)
-if (place_meeting(x,y+vsp,obj_PlatformPlaceholder))
+if (place_meeting(x,y+vsp,platforms))
 {
-	while (!place_meeting(x,y+sign (vsp),obj_PlatformPlaceholder))
+	while (!place_meeting(x,y+sign (vsp),platforms))
 	{
 		y = y + sign(vsp);
 	}

@@ -5,6 +5,8 @@
     {"id":{"name":"obj_GreenSlimeIdle","path":"objects/obj_GreenSlimeIdle/obj_GreenSlimeIdle.yy",},"order":1,},
     {"id":{"name":"spr_RedSlimeSprint","path":"sprites/spr_RedSlimeSprint/spr_RedSlimeSprint.yy",},"order":10,},
     {"id":{"name":"spr_RedSlimeRun","path":"sprites/spr_RedSlimeRun/spr_RedSlimeRun.yy",},"order":9,},
+    {"id":{"name":"platforms","path":"tilesets/platforms/platforms.yy",},"order":0,},
+    {"id":{"name":"planettiles2resize","path":"sprites/planettiles2resize/planettiles2resize.yy",},"order":11,},
     {"id":{"name":"obj_GreenSlimeBall","path":"objects/obj_GreenSlimeBall/obj_GreenSlimeBall.yy",},"order":3,},
     {"id":{"name":"spr_GreenSlime","path":"sprites/spr_GreenSlime/spr_GreenSlime.yy",},"order":0,},
     {"id":{"name":"spr_PlatformPlaceholder","path":"sprites/spr_PlatformPlaceholder/spr_PlatformPlaceholder.yy",},"order":2,},
