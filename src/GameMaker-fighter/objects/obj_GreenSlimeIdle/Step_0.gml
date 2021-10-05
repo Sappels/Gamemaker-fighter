@@ -56,7 +56,7 @@ if(keyboard_check(vk_left) && keyboard_check(vk_rshift))
 	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
 	{
 		
-		x -= 5;
+		hsp = -5;
 	}
 	
 	// Stop movement when colliding between players
@@ -102,7 +102,7 @@ if(keyboard_check(vk_right) && keyboard_check(vk_rshift))
 	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
 	{
 		
-		x += 5;
+		hsp = 5;
 	}
 	
 	// Stop movement when colliding between players

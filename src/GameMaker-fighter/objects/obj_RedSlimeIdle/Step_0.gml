@@ -52,7 +52,7 @@ if(keyboard_check(ord("A")) && keyboard_check(vk_lshift))
 	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
 	{
 		
-		x -= 5;
+		hsp = -5;
 	}
 	
 	// Stop movement when colliding between players
@@ -96,7 +96,7 @@ if(keyboard_check(ord("D")) && keyboard_check(vk_lshift))
 	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
 	{
 		
-		x += 5;
+		hsp = 5;
 	}
 	
 	// Stop movement when colliding between players
