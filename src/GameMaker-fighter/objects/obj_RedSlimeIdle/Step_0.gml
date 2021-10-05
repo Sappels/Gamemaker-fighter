@@ -15,11 +15,40 @@ vsp = vsp + grv;
 
 if keyboard_check(ord("A"))
 {
-    x -= 5;
+    
+	
+	// Movement when not Colliding between players
+	
+	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	{
+		x -= 5;
+	}
+	
+	// Stop movement when colliding between players
+	
+	if(place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	{
+		x -= 0;
+	}
+	
 }
 if keyboard_check(ord("D"))
 {
-    x += 5;
+   	
+	// Movement when not Colliding between players
+	
+	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	{
+		x += 5;
+	}
+	
+	// Stop movement when colliding between players
+	
+	if(place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	{
+		x += 0;
+	}
+	
 }
 if keyboard_check(ord("W"))
 {

@@ -17,11 +17,39 @@ vsp = vsp + grv;
 //movement
 if keyboard_check(vk_left)
 {
-    x -= 5;
+    
+	// Movement when not Colliding between players
+	
+	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
+	{
+		x -= 5;
+	}
+	
+	// Stop movement when colliding between players
+	
+	if(place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
+	{
+		x -= 0;
+	}
+	
 }
 if keyboard_check(vk_right)
 {
-    x += 5;
+    	
+	// Movement when not Colliding between players
+	
+	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
+	{
+		x += 5;
+	}
+	
+	// Stop movement when colliding between players
+	
+	if(place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
+	{
+		x += 0;
+	}
+	
 }
 if keyboard_check(vk_up)
 {
