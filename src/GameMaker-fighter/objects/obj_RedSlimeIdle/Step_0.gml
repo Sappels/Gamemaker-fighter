@@ -14,9 +14,10 @@ vsp = vsp + grv;
 
 // idle animation when not moving left or right
 
-if(!keyboard_check(vk_left) || !keyboard_check(vk_right)) 
+if(!keyboard_check(ord("A")) || !keyboard_check(ord("D")))
 {
 	sprite_index = spr_RedSlimeIdle;
+	hsp = 0;
 }
 
 
@@ -29,7 +30,7 @@ if keyboard_check(ord("A"))
 	
 	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
 	{
-		x -= 3;
+		hsp = -3;
 	}
 	
 	// Stop movement when colliding between players
@@ -53,7 +54,7 @@ if(keyboard_check(ord("A")) && keyboard_check(vk_lshift))
 	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
 	{
 		
-		x -= 5;
+		hsp = -5;
 	}
 	
 	// Stop movement when colliding between players
@@ -75,7 +76,7 @@ if keyboard_check(ord("D"))
 	
 	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
 	{
-		x += 3;
+		hsp = 3;
 	}
 	
 	// Stop movement when colliding between players
@@ -99,7 +100,7 @@ if(keyboard_check(ord("D")) && keyboard_check(vk_lshift))
 	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
 	{
 		
-		x += 5;
+		hsp = 5;
 	}
 	
 	// Stop movement when colliding between players
@@ -116,11 +117,11 @@ if keyboard_check(ord("W"))
     //motion_set(90,10);
 	vsp = -5;
 }
-if keyboard_check(ord("S"))
-{
-    //y += 5;
-}
-
+//if keyboard_check(ord("S"))
+//{
+//    //y += 5;
+//}
+//
 
 
 //Vertical collision (work in progress)
@@ -133,3 +134,15 @@ if (place_meeting(x,y+vsp,obj_PlatformPlaceholder))
 	vsp = 0;
 }
 y = y + vsp;
+
+//Horizontal collision (work in progress)
+if (place_meeting(x+hsp,y,obj_PlatformPlaceholder))
+{
+	while (!place_meeting(x+hsp,y,obj_PlatformPlaceholder))
+	{
+		x = x + sign(hsp);
+	}
+	hsp = 0;
+	vsp = 1;
+}
+x = x + hsp;
