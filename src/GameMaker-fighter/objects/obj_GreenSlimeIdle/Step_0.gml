@@ -28,7 +28,7 @@ if(!keyboard_check(vk_left) || !keyboard_check(vk_right))
 
 //movement
 
-if keyboard_check(vk_left)
+if (keyboard_check(vk_left))
 {
     sprite_index = spr_GreenSlimeRun;
 	image_xscale = 1;
@@ -39,6 +39,7 @@ if keyboard_check(vk_left)
 	{
 		
 		hsp = -3;
+		
 	}
 	
 	// Stop movement when colliding between players
@@ -63,6 +64,7 @@ if(keyboard_check(vk_left) && keyboard_check(vk_rshift))
 	{
 		
 		hsp = -5;
+		
 	}
 	
 	// Stop movement when colliding between players
@@ -87,6 +89,7 @@ if keyboard_check(vk_right)
 	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
 	{
 		hsp = 3;
+		
 	}
 	
 	// Stop movement when colliding between players
@@ -102,15 +105,18 @@ if keyboard_check(vk_right)
 
 if(keyboard_check(vk_right) && keyboard_check(vk_rshift))
 {
-    sprite_index = spr_GreenSlimeSprint;
+    
+	sprite_index = spr_GreenSlimeSprint;
 	image_xscale = -1;
 	
+		
 	// Movement when not Colliding between players
 	
 	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
 	{
 		
 		hsp = 5;
+		
 	}
 	
 	// Stop movement when colliding between players
@@ -119,6 +125,8 @@ if(keyboard_check(vk_right) && keyboard_check(vk_rshift))
 	{
 		x += 0;
 	}
+	
+	
 	
 }
 
@@ -141,6 +149,8 @@ if (place_meeting(x,y+vsp,obj_PlatformPlaceholder))
 		y = y + sign(vsp);
 	}
 	vsp = 0;
+	
+	
 }
 y = y + vsp;
 
@@ -153,6 +163,8 @@ if (place_meeting(x+hsp,y,obj_PlatformPlaceholder))
 	}
 	hsp = 0;
 	vsp = 1;
+	
+	
 }
 x = x + hsp;
 
