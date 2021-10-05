@@ -4,7 +4,16 @@ isGrounded = place_meeting(x, y + 1, obj_PlatformPlaceholder);
 if(keyboard_check_pressed(vk_rcontrol)) 
 {
 	var inst = instance_create_layer(x,y, "instances", obj_GreenSlimeBall);
-	inst.direction = image_angle + 180;
+	
+	if(image_xscale = 1) 
+	{
+		inst.direction = image_angle + 180;
+	}
+	
+	if(image_xscale = -1) 
+	{
+		inst.direction = image_angle;
+	}
 	
 }
 
