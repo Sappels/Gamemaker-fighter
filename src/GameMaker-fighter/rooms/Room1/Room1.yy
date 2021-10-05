@@ -37,7 +37,7 @@
 23,24,25,24,25,24,25,24,25,24,25,24,25,24,25,24,25,24,25,24,25,24,25,24,25,24,25,24,25,24,25,24,25,24,25,24,25,24,25,26,
 34,35,36,35,36,35,36,35,36,35,36,35,36,35,36,35,36,35,36,35,36,35,36,35,36,35,36,35,36,35,36,35,36,35,36,35,36,35,36,37,
 45,46,47,46,47,46,47,46,47,46,47,46,47,46,47,46,47,46,47,46,47,46,47,46,47,46,47,46,47,46,47,46,47,46,47,46,47,46,47,48,
-],},"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Tiles_1","tags":[],"resourceType":"GMRTileLayer",},
+],},"visible":false,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Tiles_1","tags":[],"resourceType":"GMRTileLayer",},
     {"assets":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Assets_1","tags":[],"resourceType":"GMRAssetLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_PlatformPlaceholder","path":"objects/obj_PlatformPlaceholder/obj_PlatformPlaceholder.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":22.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":688.0,"y":736.0,"resourceVersion":"1.0","name":"inst_25FBCBB5","tags":[],"resourceType":"GMRInstance",},
