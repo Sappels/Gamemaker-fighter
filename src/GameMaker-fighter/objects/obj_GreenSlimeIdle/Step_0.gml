@@ -38,7 +38,7 @@ if (keyboard_check(vk_left))
 	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
 	{
 		
-		hsp = -3;
+		hsp = -6;
 		
 	}
 	
@@ -63,7 +63,7 @@ if(keyboard_check(vk_left) && keyboard_check(vk_rshift))
 	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
 	{
 		
-		hsp = -5;
+		hsp = -8;
 		
 	}
 	
@@ -88,7 +88,7 @@ if keyboard_check(vk_right)
 	
 	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
 	{
-		hsp = 3;
+		hsp = 6;
 		
 	}
 	
@@ -115,7 +115,7 @@ if(keyboard_check(vk_right) && keyboard_check(vk_rshift))
 	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
 	{
 		
-		hsp = 5;
+		hsp = 8;
 		
 	}
 	
@@ -133,6 +133,7 @@ if(keyboard_check(vk_right) && keyboard_check(vk_rshift))
 if keyboard_check(vk_up)
 {
     vsp = -5;
+	
 }
 //if keyboard_check(vk_down)
 //{
