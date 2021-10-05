@@ -3,16 +3,18 @@ isGrounded = place_meeting(x, y + 1, obj_PlatformPlaceholder);
 //Shoot function
 if(keyboard_check_pressed(vk_rcontrol)) 
 {
-	var inst = instance_create_layer(x,y, "instances", obj_GreenSlimeBall);
+	
 	
 	if(image_xscale = 1) 
 	{
-		inst.direction = image_angle + 180;
+		var slimeBallL = instance_create_layer(x,y, "instances", obj_BlueSlimeBallL);
+		slimeBallL.direction = image_angle + 180;
 	}
 	
 	if(image_xscale = -1) 
 	{
-		inst.direction = image_angle;
+		var slimeBallR = instance_create_layer(x,y, "instances", obj_BlueSlimeBallR);
+		slimeBallR.direction = image_angle;
 	}
 	
 }

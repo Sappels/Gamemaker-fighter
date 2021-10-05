@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_RedSlimeBall",
-    "path": "sprites/spr_RedSlimeBall/spr_RedSlimeBall.yy",
+    "name": "spr_RedSlimeBallL",
+    "path": "sprites/spr_RedSlimeBallL/spr_RedSlimeBallL.yy",
   },
   "solid": false,
   "visible": true,
@@ -32,7 +32,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_BlueSlimeBall",
+  "name": "obj_RedSlimeBallL",
   "tags": [],
   "resourceType": "GMObject",
 }

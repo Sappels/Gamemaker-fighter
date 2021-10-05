@@ -7,16 +7,23 @@ if(keyboard_check_pressed(vk_lcontrol))
 {
 	sprite_index = spr_RedSlimeShoot;
 	
-	var inst = instance_create_layer(x,y, "instances", obj_BlueSlimeBall);
 	
+	
+	
+		
 	if(image_xscale = 1) 
 	{
-	inst.direction = image_angle;
+	
+	var slimeBallR = instance_create_layer(x,y, "instances", obj_RedSlimeBallR);
+	slimeBallR.direction = image_angle;
+	
 	}
 	
 	if(image_xscale = -1) 
 	{
-	inst.direction = image_angle + 180;
+	
+	var slimeBallL = instance_create_layer(x,y, "instances", obj_RedSlimeBallL);
+	slimeBallL.direction = image_angle + 180;
 	
 	}
 	
