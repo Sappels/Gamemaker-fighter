@@ -14,14 +14,24 @@ if(keyboard_check_pressed(vk_rcontrol))
 vsp = vsp + grv;
 
 
+// idle animation when not moving left or right
+
+if(!keyboard_check(vk_left) || !keyboard_check(vk_right)) 
+{
+	sprite_index = spr_GreenSlimeIdle;
+}
+
 //movement
+
 if keyboard_check(vk_left)
 {
-    
+    sprite_index = spr_GreenSlimeRun;
+	
 	// Movement when not Colliding between players
 	
 	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
 	{
+		
 		x -= 5;
 	}
 	
@@ -33,9 +43,14 @@ if keyboard_check(vk_left)
 	}
 	
 }
+
+
+
 if keyboard_check(vk_right)
 {
-    	
+    
+	sprite_index = spr_GreenSlimeRun;
+	
 	// Movement when not Colliding between players
 	
 	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
