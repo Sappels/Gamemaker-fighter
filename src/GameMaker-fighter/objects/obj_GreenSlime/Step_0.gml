@@ -8,9 +8,10 @@ if(keyboard_check_pressed(vk_rcontrol))
 }
 
 
-//gravity
-y += 0.98 * delta_time / 5000;
 
+//gravity
+//y += 0.98 * delta_time / 5000;
+vsp = vsp + grv;
 
 
 //movement
@@ -38,10 +39,10 @@ if (place_meeting(x,y+vsp,obj_PlatformPlaceholder))
 {
 	while (!place_meeting(x,y+sign (vsp),obj_PlatformPlaceholder))
 	{
-		x = x + sign(vsp);
+		y = y + sign(vsp);
 	}
 	vsp = 0;
 }
-x = x + vsp;
+y = y + vsp;
 
 
