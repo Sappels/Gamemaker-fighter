@@ -1,7 +1,10 @@
 {
   "resources": [
+    {"id":{"name":"Mane_Stor","path":"sprites/Mane_Stor/Mane_Stor.yy",},"order":13,},
     {"id":{"name":"spr_GreenSlimeRun","path":"sprites/spr_GreenSlimeRun/spr_GreenSlimeRun.yy",},"order":4,},
+    {"id":{"name":"Planet","path":"sprites/Planet/Planet.yy",},"order":12,},
     {"id":{"name":"spr_GreenSlimeSprint","path":"sprites/spr_GreenSlimeSprint/spr_GreenSlimeSprint.yy",},"order":5,},
+    {"id":{"name":"Mane_liten","path":"sprites/Mane_liten/Mane_liten.yy",},"order":14,},
     {"id":{"name":"obj_GreenSlimeIdle","path":"objects/obj_GreenSlimeIdle/obj_GreenSlimeIdle.yy",},"order":1,},
     {"id":{"name":"spr_RedSlimeSprint","path":"sprites/spr_RedSlimeSprint/spr_RedSlimeSprint.yy",},"order":8,},
     {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},"order":1,},
