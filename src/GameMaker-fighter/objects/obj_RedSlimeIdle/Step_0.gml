@@ -28,6 +28,29 @@ if keyboard_check(ord("A"))
 	
 	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
 	{
+		x -= 3;
+	}
+	
+	// Stop movement when colliding between players
+	
+	if(place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	{
+		x -= 0;
+	}
+	
+}
+
+// sprint left
+
+if(keyboard_check(ord("A")) && keyboard_check(vk_lshift))
+{
+    sprite_index = spr_RedSlimeSprint;
+	
+	// Movement when not Colliding between players
+	
+	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	{
+		
 		x -= 5;
 	}
 	
@@ -39,6 +62,7 @@ if keyboard_check(ord("A"))
 	}
 	
 }
+
 if keyboard_check(ord("D"))
 {
    	
@@ -48,6 +72,29 @@ if keyboard_check(ord("D"))
 	
 	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
 	{
+		x += 3;
+	}
+	
+	// Stop movement when colliding between players
+	
+	if(place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	{
+		x += 0;
+	}
+	
+}
+
+// sprint right
+
+if(keyboard_check(ord("D")) && keyboard_check(vk_lshift))
+{
+    sprite_index = spr_RedSlimeSprint;
+	
+	// Movement when not Colliding between players
+	
+	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	{
+		
 		x += 5;
 	}
 	
@@ -59,6 +106,7 @@ if keyboard_check(ord("D"))
 	}
 	
 }
+
 if keyboard_check(ord("W"))
 {
     //motion_set(90,10);
