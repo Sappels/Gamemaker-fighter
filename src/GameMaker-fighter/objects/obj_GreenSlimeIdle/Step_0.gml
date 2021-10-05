@@ -19,6 +19,7 @@ vsp = vsp + grv;
 if(!keyboard_check(vk_left) || !keyboard_check(vk_right)) 
 {
 	sprite_index = spr_GreenSlimeIdle;
+	hsp = 0;
 }
 
 //movement
@@ -32,7 +33,7 @@ if keyboard_check(vk_left)
 	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
 	{
 		
-		x -= 3;
+		hsp = -3;
 	}
 	
 	// Stop movement when colliding between players
@@ -78,7 +79,7 @@ if keyboard_check(vk_right)
 	
 	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
 	{
-		x += 3;
+		hsp = 3;
 	}
 	
 	// Stop movement when colliding between players
@@ -117,14 +118,14 @@ if keyboard_check(vk_up)
 {
     vsp = -5;
 }
-if keyboard_check(vk_down)
-{
-    //y += 5;
-}
+//if keyboard_check(vk_down)
+//{
+//    //y += 5;
+//}
 
 
 
-//Vertical collision (work in progress)
+//Vertical collision 
 if (place_meeting(x,y+vsp,obj_PlatformPlaceholder))
 {
 	while (!place_meeting(x,y+sign (vsp),obj_PlatformPlaceholder))
@@ -134,5 +135,18 @@ if (place_meeting(x,y+vsp,obj_PlatformPlaceholder))
 	vsp = 0;
 }
 y = y + vsp;
+
+//Horizontal collision (work in progress)
+if (place_meeting(x+hsp,y,obj_PlatformPlaceholder))
+{
+	while (!place_meeting(x+hsp,y,obj_PlatformPlaceholder))
+	{
+		x = x + sign(hsp);
+	}
+	hsp = 0;
+	vsp = 1;
+}
+x = x + hsp;
+
 
 
