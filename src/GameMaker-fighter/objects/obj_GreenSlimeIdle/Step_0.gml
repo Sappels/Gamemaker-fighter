@@ -32,6 +32,29 @@ if keyboard_check(vk_left)
 	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
 	{
 		
+		x -= 3;
+	}
+	
+	// Stop movement when colliding between players
+	
+	if(place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
+	{
+		x -= 0;
+	}
+	
+}
+
+// sprint left
+
+if(keyboard_check(vk_left) && keyboard_check(vk_rshift))
+{
+    sprite_index = spr_GreenSlimeSprint;
+	
+	// Movement when not Colliding between players
+	
+	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
+	{
+		
 		x -= 5;
 	}
 	
@@ -55,6 +78,29 @@ if keyboard_check(vk_right)
 	
 	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
 	{
+		x += 3;
+	}
+	
+	// Stop movement when colliding between players
+	
+	if(place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
+	{
+		x += 0;
+	}
+	
+}
+
+// sprint right
+
+if(keyboard_check(vk_right) && keyboard_check(vk_rshift))
+{
+    sprite_index = spr_GreenSlimeSprint;
+	
+	// Movement when not Colliding between players
+	
+	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
+	{
+		
 		x += 5;
 	}
 	
@@ -66,6 +112,7 @@ if keyboard_check(vk_right)
 	}
 	
 }
+
 if keyboard_check(vk_up)
 {
     vsp = -5;
