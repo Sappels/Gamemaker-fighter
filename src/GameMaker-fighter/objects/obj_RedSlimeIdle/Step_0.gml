@@ -52,14 +52,14 @@ if keyboard_check(ord("A"))
 	
 	// Movement when not Colliding between players
 	
-	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	if(!place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
 	{
 		hsp = -6;
 	}
 	
 	// Stop movement when colliding between players
 	
-	if(place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	if(place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
 	{
 		x -= 0;
 	}
@@ -75,7 +75,7 @@ if(keyboard_check(ord("A")) && keyboard_check(vk_lshift))
 	
 	// Movement when not Colliding between players
 	
-	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	if(!place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
 	{
 		
 		hsp = -8;
@@ -83,7 +83,7 @@ if(keyboard_check(ord("A")) && keyboard_check(vk_lshift))
 	
 	// Stop movement when colliding between players
 	
-	if(place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	if(place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
 	{
 		x -= 0;
 	}
@@ -98,14 +98,14 @@ if keyboard_check(ord("D"))
 	
 	// Movement when not Colliding between players
 	
-	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	if(!place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
 	{
 		hsp = 6;
 	}
 	
 	// Stop movement when colliding between players
 	
-	if(place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	if(place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
 	{
 		x += 0;
 	}
@@ -121,7 +121,7 @@ if(keyboard_check(ord("D")) && keyboard_check(vk_lshift))
 	
 	// Movement when not Colliding between players
 	
-	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	if(!place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
 	{
 		
 		hsp = 8;
@@ -129,7 +129,7 @@ if(keyboard_check(ord("D")) && keyboard_check(vk_lshift))
 	
 	// Stop movement when colliding between players
 	
-	if(place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	if(place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
 	{
 		x += 0;
 	}
