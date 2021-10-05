@@ -23,6 +23,7 @@ if(!keyboard_check(vk_left) || !keyboard_check(vk_right))
 if keyboard_check(ord("A"))
 {
     sprite_index = spr_RedSlimeRun;
+	image_xscale = -1;
 	
 	// Movement when not Colliding between players
 	
@@ -45,6 +46,7 @@ if keyboard_check(ord("A"))
 if(keyboard_check(ord("A")) && keyboard_check(vk_lshift))
 {
     sprite_index = spr_RedSlimeSprint;
+	image_xscale = -1;
 	
 	// Movement when not Colliding between players
 	
@@ -67,6 +69,7 @@ if keyboard_check(ord("D"))
 {
    	
 	sprite_index = spr_RedSlimeRun;
+	image_xscale = 1;
 	
 	// Movement when not Colliding between players
 	
@@ -89,6 +92,7 @@ if keyboard_check(ord("D"))
 if(keyboard_check(ord("D")) && keyboard_check(vk_lshift))
 {
     sprite_index = spr_RedSlimeSprint;
+	image_xscale = 1;
 	
 	// Movement when not Colliding between players
 	

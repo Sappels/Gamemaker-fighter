@@ -19,6 +19,7 @@ vsp = vsp + grv;
 if(!keyboard_check(vk_left) || !keyboard_check(vk_right)) 
 {
 	sprite_index = spr_GreenSlimeIdle;
+	
 }
 
 //movement
@@ -26,6 +27,7 @@ if(!keyboard_check(vk_left) || !keyboard_check(vk_right))
 if keyboard_check(vk_left)
 {
     sprite_index = spr_GreenSlimeRun;
+	image_xscale = 1;
 	
 	// Movement when not Colliding between players
 	
@@ -49,6 +51,7 @@ if keyboard_check(vk_left)
 if(keyboard_check(vk_left) && keyboard_check(vk_rshift))
 {
     sprite_index = spr_GreenSlimeSprint;
+	image_xscale = 1;
 	
 	// Movement when not Colliding between players
 	
@@ -73,6 +76,7 @@ if keyboard_check(vk_right)
 {
     
 	sprite_index = spr_GreenSlimeRun;
+	image_xscale = -1;
 	
 	// Movement when not Colliding between players
 	
@@ -95,6 +99,7 @@ if keyboard_check(vk_right)
 if(keyboard_check(vk_right) && keyboard_check(vk_rshift))
 {
     sprite_index = spr_GreenSlimeSprint;
+	image_xscale = -1;
 	
 	// Movement when not Colliding between players
 	
