@@ -2,8 +2,11 @@ isGrounded = place_meeting(x, y + 1, obj_PlatformPlaceholder);
 
 //Shoot function
 
+
 if(keyboard_check_pressed(vk_lcontrol)) 
 {
+	sprite_index = spr_RedSlimeShoot;
+	
 	var inst = instance_create_layer(x,y, "instances", obj_BlueSlimeBall);
 	
 	if(image_xscale = 1) 
@@ -16,6 +19,9 @@ if(keyboard_check_pressed(vk_lcontrol))
 	inst.direction = image_angle + 180;
 	
 	}
+	
+	
+	
 }
 
 
@@ -25,7 +31,7 @@ vsp = vsp + grv;
 
 // idle animation when not moving left or right
 
-if(!keyboard_check(ord("A")) || !keyboard_check(ord("D")))
+if(!keyboard_check(ord("A")) || !keyboard_check(ord("D")) || !keyboard_check(vk_lcontrol))
 {
 	sprite_index = spr_RedSlimeIdle;
 	hsp = 0;
