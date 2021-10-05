@@ -1,5 +1,7 @@
 {
   "resources": [
+    {"id":{"name":"spr_GreenSlimeRun","path":"sprites/spr_GreenSlimeRun/spr_GreenSlimeRun.yy",},"order":6,},
+    {"id":{"name":"spr_GreenSlimeSprint","path":"sprites/spr_GreenSlimeSprint/spr_GreenSlimeSprint.yy",},"order":7,},
     {"id":{"name":"obj_GreenSlime","path":"objects/obj_GreenSlime/obj_GreenSlime.yy",},"order":1,},
     {"id":{"name":"obj_GreenSlimeBall","path":"objects/obj_GreenSlimeBall/obj_GreenSlimeBall.yy",},"order":3,},
     {"id":{"name":"spr_GreenSlime","path":"sprites/spr_GreenSlime/spr_GreenSlime.yy",},"order":0,},
