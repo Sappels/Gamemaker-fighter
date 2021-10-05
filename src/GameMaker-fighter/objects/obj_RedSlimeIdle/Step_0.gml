@@ -12,14 +12,52 @@ if(keyboard_check_pressed(vk_lcontrol))
 //y += 0.98 * delta_time / 5000;
 vsp = vsp + grv;
 
+// idle animation when not moving left or right
+
+if(!keyboard_check(vk_left) || !keyboard_check(vk_right)) 
+{
+	sprite_index = spr_RedSlimeIdle;
+}
+
 
 if keyboard_check(ord("A"))
 {
-    x -= 5;
+    sprite_index = spr_RedSlimeRun;
+	
+	// Movement when not Colliding between players
+	
+	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	{
+		x -= 5;
+	}
+	
+	// Stop movement when colliding between players
+	
+	if(place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	{
+		x -= 0;
+	}
+	
 }
 if keyboard_check(ord("D"))
 {
-    x += 5;
+   	
+	sprite_index = spr_RedSlimeRun;
+	
+	// Movement when not Colliding between players
+	
+	if(!place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	{
+		x += 5;
+	}
+	
+	// Stop movement when colliding between players
+	
+	if(place_meeting(x+hsp,y,obj_GreenSlimeIdle)) 
+	{
+		x += 0;
+	}
+	
 }
 if keyboard_check(ord("W"))
 {
