@@ -1,4 +1,4 @@
-
+isGrounded = place_meeting(x, y + 1, obj_PlatformPlaceholder);
 
 //Shoot function
 if(keyboard_check_pressed(vk_lcontrol)) 
@@ -112,10 +112,10 @@ if(keyboard_check(ord("D")) && keyboard_check(vk_lshift))
 	
 }
 
-if keyboard_check(ord("W"))
+if keyboard_check(ord("W")) && isGrounded
 {
     //motion_set(90,10);
-	vsp = -5;
+	vsp = -15;
 }
 //if keyboard_check(ord("S"))
 //{
