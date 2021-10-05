@@ -25,11 +25,11 @@ if keyboard_check(vk_right)
 }
 if keyboard_check(vk_up)
 {
-    y -= 5;
+    vsp = -5;
 }
 if keyboard_check(vk_down)
 {
-    y += 5;
+    //y += 5;
 }
 
 

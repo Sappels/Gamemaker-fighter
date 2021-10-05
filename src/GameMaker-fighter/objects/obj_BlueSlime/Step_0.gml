@@ -23,11 +23,12 @@ if keyboard_check(ord("D"))
 }
 if keyboard_check(ord("W"))
 {
-    y -= 5;
+    //motion_set(90,10);
+	vsp = -5;
 }
 if keyboard_check(ord("S"))
 {
-    y += 5;
+    //y += 5;
 }
 
 
