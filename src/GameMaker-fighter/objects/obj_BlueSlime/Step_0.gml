@@ -8,6 +8,10 @@ if(keyboard_check_pressed(vk_lcontrol))
 }
 
 
+//gravity
+y += 0.98 * delta_time / 5000;
+
+
 if keyboard_check(ord("A"))
 {
     x -= 5;

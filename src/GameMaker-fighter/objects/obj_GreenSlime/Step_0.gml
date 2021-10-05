@@ -8,7 +8,12 @@ if(keyboard_check_pressed(vk_rcontrol))
 }
 
 
+//gravity
+y += 0.98 * delta_time / 5000;
 
+
+
+//movement
 if keyboard_check(vk_left)
 {
     x -= 5;
