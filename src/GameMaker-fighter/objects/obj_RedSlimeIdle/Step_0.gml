@@ -39,7 +39,7 @@ vsp = vsp + grv;
 
 // idle animation when not moving left or right
 
-if(!keyboard_check(ord("A")) || !keyboard_check(ord("D")) || !keyboard_check(vk_lcontrol))
+if(!keyboard_check(ord("A")) && jump_current == 2 || !keyboard_check(ord("D")) && jump_current == 2)
 {
 	sprite_index = spr_RedSlimeIdle;
 	hsp = 0;
@@ -48,7 +48,7 @@ if(!keyboard_check(ord("A")) || !keyboard_check(ord("D")) || !keyboard_check(vk_
 }
 
 
-if keyboard_check(ord("A"))
+if (keyboard_check(ord("A")) && jump_current == 2)
 {
     sprite_index = spr_RedSlimeRun;
 	image_xscale = -scale;
@@ -62,9 +62,23 @@ if keyboard_check(ord("A"))
 	
 }
 
+if (keyboard_check(ord("A")) && jump_current < 2)
+{
+    sprite_index = spr_RedSlimeJump;
+	image_xscale = -scale;
+	
+	// Movement when not Colliding between players
+	
+	if(!place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
+	{
+		hsp = -6;
+	}
+	
+}
+
 // sprint left
 
-if(keyboard_check(ord("A")) && keyboard_check(vk_lshift))
+if(keyboard_check(ord("A")) && keyboard_check(vk_lshift) && jump_current == 2)
 {
     sprite_index = spr_RedSlimeSprint;
 	image_xscale = -scale;
@@ -79,7 +93,22 @@ if(keyboard_check(ord("A")) && keyboard_check(vk_lshift))
 	
 }
 
-if keyboard_check(ord("D"))
+if(keyboard_check(ord("A")) && keyboard_check(vk_lshift) && jump_current < 2)
+{
+    sprite_index = spr_RedSlimeJump;
+	image_xscale = -scale;
+	
+	// Movement when not Colliding between players
+	
+	if(!place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
+	{
+		
+		hsp = -8;
+	}
+	
+}
+
+if (keyboard_check(ord("D")) && jump_current == 2)
 {
    	
 	sprite_index = spr_RedSlimeRun;
@@ -94,11 +123,41 @@ if keyboard_check(ord("D"))
 	
 }
 
+if (keyboard_check(ord("D")) && jump_current < 2)
+{
+   	
+	sprite_index = spr_RedSlimeJump;
+	image_xscale = scale;
+	
+	// Movement when not Colliding between players
+	
+	if(!place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
+	{
+		hsp = 6;
+	}
+	
+}
+
 // sprint right
 
-if(keyboard_check(ord("D")) && keyboard_check(vk_lshift))
+if(keyboard_check(ord("D")) && keyboard_check(vk_lshift) && jump_current == 2)
 {
     sprite_index = spr_RedSlimeSprint;
+	image_xscale = scale;
+	
+	// Movement when not Colliding between players
+	
+	if(!place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
+	{
+		
+		hsp = 8;
+	}
+	
+}
+
+if(keyboard_check(ord("D")) && keyboard_check(vk_lshift) && jump_current < 2)
+{
+    sprite_index = spr_RedSlimeJump;
 	image_xscale = scale;
 	
 	// Movement when not Colliding between players
@@ -114,6 +173,8 @@ if(keyboard_check(ord("D")) && keyboard_check(vk_lshift))
 if (keyboard_check_pressed(ord("W")) && jump_current > 0)
 {
     //motion_set(90,10);
+	
+	sprite_index = spr_RedSlimeJump;
 	vsp = -10;
 	jump_current--;
 }
