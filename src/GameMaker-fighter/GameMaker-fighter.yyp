@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"Mane_Stor","path":"sprites/Mane_Stor/Mane_Stor.yy",},"order":13,},
     {"id":{"name":"spr_BlueSlimeRun","path":"sprites/spr_BlueSlimeRun/spr_BlueSlimeRun.yy",},"order":4,},
+    {"id":{"name":"spr_BlueSlimeJump","path":"sprites/spr_BlueSlimeJump/spr_BlueSlimeJump.yy",},"order":20,},
     {"id":{"name":"Planet","path":"sprites/Planet/Planet.yy",},"order":12,},
     {"id":{"name":"spr_BlueSlimeSprint","path":"sprites/spr_BlueSlimeSprint/spr_BlueSlimeSprint.yy",},"order":5,},
     {"id":{"name":"Mane_liten","path":"sprites/Mane_liten/Mane_liten.yy",},"order":14,},
