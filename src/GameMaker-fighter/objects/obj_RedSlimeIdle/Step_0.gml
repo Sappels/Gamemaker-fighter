@@ -16,6 +16,7 @@ if(keyboard_check_pressed(vk_lcontrol))
 	
 	var slimeBallR = instance_create_layer(x,y, "instances", obj_RedSlimeBallR);
 	slimeBallR.direction = image_angle;
+	audio_play_sound(sfx_SlimeBall, 0, false);
 	
 	}
 	
@@ -24,6 +25,7 @@ if(keyboard_check_pressed(vk_lcontrol))
 	
 	var slimeBallL = instance_create_layer(x,y, "instances", obj_RedSlimeBallL);
 	slimeBallL.direction = image_angle + 180;
+	audio_play_sound(sfx_SlimeBall, 0, false);
 	
 	}
 	
