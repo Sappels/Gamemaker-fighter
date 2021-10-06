@@ -9,12 +9,7 @@ if(keyboard_check_pressed(vk_lcontrol))
 	
 	
 	
-
-	
-		
-	if(image_xscale == scale) 
-
-	if(image_xscale = 1) 
+	if(image_xscale = scale) 
 
 	{
 	

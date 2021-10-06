@@ -2,7 +2,7 @@
 
 draw_self();
 
-if(image_xscale <= 0.3 || image_yscale <= 0.3) 
+if(scale == 0.3) 
 {
 draw_set_font(-1);
 draw_set_color(c_black);
