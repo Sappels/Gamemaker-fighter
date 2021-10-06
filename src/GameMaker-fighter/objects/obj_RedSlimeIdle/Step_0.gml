@@ -1,5 +1,6 @@
 isGrounded = place_meeting(x, y + 1, obj_PlatformPlaceholder);
 
+
 //Shoot function
 
 
@@ -11,7 +12,7 @@ if(keyboard_check_pressed(vk_lcontrol))
 	
 	
 		
-	if(image_xscale = 1) 
+	if(image_xscale == scale) 
 	{
 	
 	var slimeBallR = instance_create_layer(x,y, "instances", obj_RedSlimeBallR);
@@ -20,7 +21,7 @@ if(keyboard_check_pressed(vk_lcontrol))
 	
 	}
 	
-	if(image_xscale = -1) 
+	if(image_xscale == -scale) 
 	{
 	
 	var slimeBallL = instance_create_layer(x,y, "instances", obj_RedSlimeBallL);
@@ -44,13 +45,15 @@ if(!keyboard_check(ord("A")) || !keyboard_check(ord("D")) || !keyboard_check(vk_
 {
 	sprite_index = spr_RedSlimeIdle;
 	hsp = 0;
+	
+	
 }
 
 
 if keyboard_check(ord("A"))
 {
     sprite_index = spr_RedSlimeRun;
-	image_xscale = -1;
+	image_xscale = -scale;
 	
 	// Movement when not Colliding between players
 	
@@ -73,7 +76,7 @@ if keyboard_check(ord("A"))
 if(keyboard_check(ord("A")) && keyboard_check(vk_lshift))
 {
     sprite_index = spr_RedSlimeSprint;
-	image_xscale = -1;
+	image_xscale = -scale;
 	
 	// Movement when not Colliding between players
 	
@@ -96,7 +99,7 @@ if keyboard_check(ord("D"))
 {
    	
 	sprite_index = spr_RedSlimeRun;
-	image_xscale = 1;
+	image_xscale = scale;
 	
 	// Movement when not Colliding between players
 	
@@ -119,7 +122,7 @@ if keyboard_check(ord("D"))
 if(keyboard_check(ord("D")) && keyboard_check(vk_lshift))
 {
     sprite_index = spr_RedSlimeSprint;
-	image_xscale = 1;
+	image_xscale = scale;
 	
 	// Movement when not Colliding between players
 	

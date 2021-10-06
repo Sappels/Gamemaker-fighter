@@ -5,14 +5,14 @@ if(keyboard_check_pressed(vk_rcontrol))
 {
 	
 	
-	if(image_xscale = 1) 
+	if(image_xscale = scale) 
 	{
 		var slimeBallL = instance_create_layer(x,y, "instances", obj_BlueSlimeBallL);
 		slimeBallL.direction = image_angle + 180;
 		audio_play_sound(sfx_SlimeBall, 0, false);
 	}
 	
-	if(image_xscale = -1) 
+	if(image_xscale = -scale) 
 	{
 		var slimeBallR = instance_create_layer(x,y, "instances", obj_BlueSlimeBallR);
 		slimeBallR.direction = image_angle;
@@ -45,7 +45,7 @@ if(!keyboard_check(vk_left) || !keyboard_check(vk_right))
 if (keyboard_check(vk_left))
 {
     sprite_index = spr_BlueSlimeRun;
-	image_xscale = 1;
+	image_xscale = scale;
 	
 	// Movement when not Colliding between players
 	
@@ -70,7 +70,7 @@ if (keyboard_check(vk_left))
 if(keyboard_check(vk_left) && keyboard_check(vk_rshift))
 {
     sprite_index = spr_BlueSlimeSprint;
-	image_xscale = 1;
+	image_xscale = scale;
 	
 	// Movement when not Colliding between players
 	
@@ -96,7 +96,7 @@ if keyboard_check(vk_right)
 {
     
 	sprite_index = spr_BlueSlimeRun;
-	image_xscale = -1;
+	image_xscale = -scale;
 	
 	// Movement when not Colliding between players
 	
@@ -121,7 +121,7 @@ if(keyboard_check(vk_right) && keyboard_check(vk_rshift))
 {
     
 	sprite_index = spr_BlueSlimeSprint;
-	image_xscale = -1;
+	image_xscale = -scale;
 	
 		
 	// Movement when not Colliding between players
