@@ -9,12 +9,14 @@ if(keyboard_check_pressed(vk_rcontrol))
 	{
 		var slimeBallL = instance_create_layer(x,y, "instances", obj_BlueSlimeBallL);
 		slimeBallL.direction = image_angle + 180;
+		audio_play_sound(sfx_SlimeBall, 0, false);
 	}
 	
 	if(image_xscale = -1) 
 	{
 		var slimeBallR = instance_create_layer(x,y, "instances", obj_BlueSlimeBallR);
 		slimeBallR.direction = image_angle;
+		audio_play_sound(sfx_SlimeBall, 0, false);
 	}
 	
 }

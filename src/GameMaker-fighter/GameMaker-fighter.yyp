@@ -16,6 +16,7 @@
     {"id":{"name":"Mushrooms","path":"tilesets/Mushrooms/Mushrooms.yy",},"order":2,},
     {"id":{"name":"platforms","path":"tilesets/platforms/platforms.yy",},"order":0,},
     {"id":{"name":"planettiles2resize","path":"sprites/planettiles2resize/planettiles2resize.yy",},"order":9,},
+    {"id":{"name":"sfx_SlimeBall","path":"sounds/sfx_SlimeBall/sfx_SlimeBall.yy",},"order":0,},
     {"id":{"name":"obj_BlueSlimeBallR","path":"objects/obj_BlueSlimeBallR/obj_BlueSlimeBallR.yy",},"order":3,},
     {"id":{"name":"spr_PlatformPlaceholder","path":"sprites/spr_PlatformPlaceholder/spr_PlatformPlaceholder.yy",},"order":0,},
     {"id":{"name":"spr_RedSlimeBallR","path":"sprites/spr_RedSlimeBallR/spr_RedSlimeBallR.yy",},"order":2,},
