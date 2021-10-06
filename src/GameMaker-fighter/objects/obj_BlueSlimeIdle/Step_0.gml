@@ -55,13 +55,7 @@ if (keyboard_check(vk_left))
 		hsp = -6;
 		
 	}
-	
-	// Stop movement when colliding between players
-	
-	if(place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
-	{
-		x -= 0;
-	}
+
 	
 }
 
@@ -81,12 +75,7 @@ if(keyboard_check(vk_left) && keyboard_check(vk_rshift))
 		
 	}
 	
-	// Stop movement when colliding between players
-	
-	if(place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
-	{
-		x -= 0;
-	}
+
 	
 }
 
@@ -106,12 +95,7 @@ if keyboard_check(vk_right)
 		
 	}
 	
-	// Stop movement when colliding between players
-	
-	if(place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
-	{
-		x += 0;
-	}
+
 	
 }
 
@@ -132,14 +116,7 @@ if(keyboard_check(vk_right) && keyboard_check(vk_rshift))
 		hsp = 8;
 		
 	}
-	
-	// Stop movement when colliding between players
-	
-	if(place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
-	{
-		x += 0;
-	}
-	
+
 	
 	
 }
@@ -150,10 +127,18 @@ if (keyboard_check_pressed(vk_up) && jump_current > 0)
 	jump_current--;
 	
 }
-//if keyboard_check(vk_down)
-//{
-//    //y += 5;
-//}
+
+
+//Player collision
+if(place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
+{
+	while (!place_meeting(x+hsp,y,obj_RedSlimeIdle))
+	{
+		x = x + sign(hsp);
+	}
+	hsp = 0;
+}
+
 
 
 

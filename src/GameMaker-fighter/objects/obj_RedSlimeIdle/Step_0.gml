@@ -1,5 +1,3 @@
-//isGrounded = place_meeting(x, y + 1, obj_PlatformPlaceholder);
-
 
 //Shoot function
 
@@ -10,8 +8,6 @@ if(keyboard_check_pressed(vk_lcontrol))
 	
 	
 	
-	
-		
 	if(image_xscale = 1) 
 	{
 	
@@ -60,13 +56,6 @@ if keyboard_check(ord("A"))
 		hsp = -6;
 	}
 	
-	// Stop movement when colliding between players
-	
-	if(place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
-	{
-		x -= 0;
-	}
-	
 }
 
 // sprint left
@@ -84,13 +73,6 @@ if(keyboard_check(ord("A")) && keyboard_check(vk_lshift))
 		hsp = -8;
 	}
 	
-	// Stop movement when colliding between players
-	
-	if(place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
-	{
-		x -= 0;
-	}
-	
 }
 
 if keyboard_check(ord("D"))
@@ -104,13 +86,6 @@ if keyboard_check(ord("D"))
 	if(!place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
 	{
 		hsp = 6;
-	}
-	
-	// Stop movement when colliding between players
-	
-	if(place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
-	{
-		x += 0;
 	}
 	
 }
@@ -130,13 +105,6 @@ if(keyboard_check(ord("D")) && keyboard_check(vk_lshift))
 		hsp = 8;
 	}
 	
-	// Stop movement when colliding between players
-	
-	if(place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
-	{
-		x += 0;
-	}
-	
 }
 
 if (keyboard_check_pressed(ord("W")) && jump_current > 0)
@@ -145,11 +113,21 @@ if (keyboard_check_pressed(ord("W")) && jump_current > 0)
 	vsp = -10;
 	jump_current--;
 }
-//if keyboard_check(ord("S"))
-//{
-//    //y += 5;
-//}
-//
+
+
+
+//Player collision
+if(place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
+{
+	while (!place_meeting(x+hsp,y,obj_BlueSlimeIdle))
+	{
+		x = x + sign(hsp);
+	}
+	hsp = 0;
+}
+
+
+
 
 
 //Vertical collision platforms
