@@ -238,7 +238,7 @@ if (place_meeting(x,y+vsp,obj_PlatformPlaceholder))
 }
 y = y + vsp;
 
-//Horizontal collision (work in progress)
+//Horizontal collision 
 if (place_meeting(x+hsp,y,obj_PlatformPlaceholder))
 {
 	while (!place_meeting(x+hsp,y,obj_PlatformPlaceholder))
@@ -247,8 +247,6 @@ if (place_meeting(x+hsp,y,obj_PlatformPlaceholder))
 	}
 	hsp = 0;
 	x = xprevious;
-
-	
 	
 }
 x = x + hsp;
