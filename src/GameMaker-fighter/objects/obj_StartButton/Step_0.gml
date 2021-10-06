@@ -6,6 +6,11 @@ if (hover == 1)
 	if(mouse_check_button_pressed(mb_left)) 
 	{
 		room_goto_next();
+		
+		if(audio_is_playing(MenuSound))
+		{
+			audio_stop_sound(MenuSound);
+		}
 	}
 }
 

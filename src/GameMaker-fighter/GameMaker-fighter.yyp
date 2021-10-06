@@ -24,6 +24,7 @@
     {"id":{"name":"planettiles2resize","path":"sprites/planettiles2resize/planettiles2resize.yy",},"order":9,},
     {"id":{"name":"sfx_SlimeBall","path":"sounds/sfx_SlimeBall/sfx_SlimeBall.yy",},"order":0,},
     {"id":{"name":"spr_QuitButtonSelected","path":"sprites/spr_QuitButtonSelected/spr_QuitButtonSelected.yy",},"order":28,},
+    {"id":{"name":"RoomGameEnd","path":"rooms/RoomGameEnd/RoomGameEnd.yy",},"order":2,},
     {"id":{"name":"RoomStart","path":"rooms/RoomStart/RoomStart.yy",},"order":1,},
     {"id":{"name":"obj_BlueSlimeBallR","path":"objects/obj_BlueSlimeBallR/obj_BlueSlimeBallR.yy",},"order":3,},
     {"id":{"name":"spr_PlatformPlaceholder","path":"sprites/spr_PlatformPlaceholder/spr_PlatformPlaceholder.yy",},"order":0,},
@@ -44,6 +45,7 @@
     {"id":{"name":"spr_pause","path":"sprites/spr_pause/spr_pause.yy",},"order":22,},
     {"id":{"name":"obj_RedSlimeIdle","path":"objects/obj_RedSlimeIdle/obj_RedSlimeIdle.yy",},"order":0,},
     {"id":{"name":"obj_RedSlimeBallR","path":"objects/obj_RedSlimeBallR/obj_RedSlimeBallR.yy",},"order":4,},
+    {"id":{"name":"mus_StartMenu","path":"sounds/mus_StartMenu/mus_StartMenu.yy",},"order":2,},
     {"id":{"name":"spr_StartButton","path":"sprites/spr_StartButton/spr_StartButton.yy",},"order":23,},
     {"id":{"name":"spr_BlueSlimeBallR","path":"sprites/spr_BlueSlimeBallR/spr_BlueSlimeBallR.yy",},"order":1,},
     {"id":{"name":"obj_PlatformPlaceholder","path":"objects/obj_PlatformPlaceholder/obj_PlatformPlaceholder.yy",},"order":2,},
@@ -66,6 +68,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"RoomStart","path":"rooms/RoomStart/RoomStart.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"RoomGameEnd","path":"rooms/RoomGameEnd/RoomGameEnd.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

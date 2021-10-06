@@ -1,0 +1,1 @@
+MenuSound = audio_play_sound(mus_StartMenu, 0, true);
