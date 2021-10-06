@@ -170,3 +170,7 @@ if (place_meeting(x+hsp,y,obj_PlatformPlaceholder))
 	vsp = 1;
 }
 x = x + hsp;
+
+//horizontal collision
+if x > room_width {x = xprevious;}
+if x < 0 {x = 0;}
