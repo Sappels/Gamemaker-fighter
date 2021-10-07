@@ -15,6 +15,7 @@
     {"id":{"name":"spr_RedSlimeShoot","path":"sprites/spr_RedSlimeShoot/spr_RedSlimeShoot.yy",},"order":15,},
     {"id":{"name":"spr_BlueSlimeBallL","path":"sprites/spr_BlueSlimeBallL/spr_BlueSlimeBallL.yy",},"order":17,},
     {"id":{"name":"spr_MainMenuButtonSelected","path":"sprites/spr_MainMenuButtonSelected/spr_MainMenuButtonSelected.yy",},"order":40,},
+    {"id":{"name":"spr_StartMenuTest2","path":"sprites/spr_StartMenuTest2/spr_StartMenuTest2.yy",},"order":44,},
     {"id":{"name":"spr_RedSlimeSprint","path":"sprites/spr_RedSlimeSprint/spr_RedSlimeSprint.yy",},"order":8,},
     {"id":{"name":"spr_PunchBox","path":"sprites/spr_PunchBox/spr_PunchBox.yy",},"order":31,},
     {"id":{"name":"spr_GameOver","path":"sprites/spr_GameOver/spr_GameOver.yy",},"order":43,},
