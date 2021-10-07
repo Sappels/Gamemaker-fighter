@@ -5,6 +5,16 @@ if (!global.pause)
     instance_activate_object(obj_Paused);
     instance_activate_object(obj_RestartButton);
     instance_activate_object(obj_MainMenuButton);
+	
+	if(global.blueSlimeWon == true) 
+	{
+		instance_activate_object(obj_BlueSlimeWins);
+	}
+	
+	if(global.redSlimeWon == true) 
+	{
+		instance_activate_object(obj_RedSlimeWins);	
+	}
 }
 else
 {
