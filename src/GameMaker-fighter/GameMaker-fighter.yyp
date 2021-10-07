@@ -17,6 +17,7 @@
     {"id":{"name":"spr_MainMenuButtonSelected","path":"sprites/spr_MainMenuButtonSelected/spr_MainMenuButtonSelected.yy",},"order":40,},
     {"id":{"name":"spr_RedSlimeSprint","path":"sprites/spr_RedSlimeSprint/spr_RedSlimeSprint.yy",},"order":8,},
     {"id":{"name":"spr_PunchBox","path":"sprites/spr_PunchBox/spr_PunchBox.yy",},"order":31,},
+    {"id":{"name":"spr_GameOver","path":"sprites/spr_GameOver/spr_GameOver.yy",},"order":43,},
     {"id":{"name":"spr_RestartButtonSelected","path":"sprites/spr_RestartButtonSelected/spr_RestartButtonSelected.yy",},"order":42,},
     {"id":{"name":"spr_StartMenu","path":"sprites/spr_StartMenu/spr_StartMenu.yy",},"order":25,},
     {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},"order":1,},
