@@ -7,6 +7,7 @@ if (hover == 1)
 	{
 		global.pause = 0;
 		audio_stop_sound(global.bgMusic);
+		
 		room_goto(RoomStart);
 	}
 }
