@@ -98,8 +98,19 @@ if (keyboard_check(vk_left) && jump_current == 2)
 
 if (keyboard_check(vk_left) && jump_current < 2)
 {
-    sprite_index = spr_BlueSlimeJump;
-	image_xscale = scale;
+    if(vsp < 0) 
+	{
+		sprite_index = spr_BlueSlimeJumpUp;
+		image_xscale = scale;
+	}
+	
+	if(vsp == 0) 
+	{
+		sprite_index = spr_BlueSlimeJumpDown;
+		image_xscale = scale;
+	}
+	
+	
 	
 	// Movement when not Colliding between players
 	
@@ -135,9 +146,19 @@ if(keyboard_check(vk_left) && keyboard_check(vk_rshift))
 
 if(keyboard_check(vk_left) && keyboard_check(vk_rshift) && jump_current < 2)
 {
-    sprite_index = spr_BlueSlimeJump;
-	image_xscale = scale;
+    if(vsp < 0) 
+	{
+		sprite_index = spr_BlueSlimeJumpUp;
+		image_xscale = scale;
+	}
 	
+	if(vsp == 0) 
+	{
+		sprite_index = spr_BlueSlimeJumpDown;
+		image_xscale = scale;
+	}
+	
+		
 	// Movement when not Colliding between players
 	
 	if(!place_meeting(x+hsp,y,obj_RedSlimeIdle)) 
@@ -155,6 +176,7 @@ if(keyboard_check(vk_left) && keyboard_check(vk_rshift) && jump_current < 2)
 if (keyboard_check(vk_right) && jump_current == 2)
 {
     
+	
 	sprite_index = spr_BlueSlimeRun;
 	image_xscale = -scale;
 	
@@ -173,8 +195,19 @@ if (keyboard_check(vk_right) && jump_current == 2)
 if (keyboard_check(vk_right) && jump_current < 2)
 {
     
-	sprite_index = spr_BlueSlimeJump;
-	image_xscale = -scale;
+	if(vsp < 0) 
+	{
+		sprite_index = spr_BlueSlimeJumpUp;
+		image_xscale = -scale;
+	}
+	
+	if(vsp == 0) 
+	{
+		sprite_index = spr_BlueSlimeJumpDown;
+		image_xscale = -scale;
+	}
+	
+	
 	
 	// Movement when not Colliding between players
 	
@@ -213,8 +246,18 @@ if(keyboard_check(vk_right) && keyboard_check(vk_rshift) && jump_current == 2)
 if(keyboard_check(vk_right) && keyboard_check(vk_rshift) && jump_current < 2)
 {
     
-	sprite_index = spr_BlueSlimeJump;
-	image_xscale = -scale;
+	if(vsp < 0) 
+	{
+		sprite_index = spr_BlueSlimeJumpUp;
+		image_xscale = -scale;
+	}
+	
+	if(vsp == 0) 
+	{
+		sprite_index = spr_BlueSlimeJumpDown;
+		image_xscale = -scale;
+	}
+	
 	
 		
 	// Movement when not Colliding between players
@@ -235,13 +278,18 @@ if(keyboard_check(vk_right) && keyboard_check(vk_rshift) && jump_current < 2)
 if (keyboard_check_pressed(vk_up) && jump_current > 0)
 {
     
-	sprite_index = spr_BlueSlimeJump;
+	sprite_index = spr_BlueSlimeJumpUp;
 	
 	vsp = -10;
 	jump_current--;
 	
 	
 	
+}
+
+if(vsp == 0) 
+{
+	sprite_index = spr_BlueSlimeJumpDown;
 }
 
 

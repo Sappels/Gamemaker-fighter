@@ -95,9 +95,19 @@ if (keyboard_check(ord("A")) && jump_current == 2)
 
 if (keyboard_check(ord("A")) && jump_current < 2)
 {
-    sprite_index = spr_RedSlimeJump;
-	image_xscale = -scale;
+    if(vsp < 0) 
+	{
+		sprite_index = spr_RedSlimeJumpUp;
+		image_xscale = -scale;
+	}
 	
+	if(vsp == 0) 
+	{
+		sprite_index = spr_RedSlimeJumpDown;
+		image_xscale = -scale;
+	}
+	
+		
 	// Movement when not Colliding between players
 	
 	if(!place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
@@ -126,9 +136,19 @@ if(keyboard_check(ord("A")) && keyboard_check(vk_lshift) && jump_current == 2)
 
 if(keyboard_check(ord("A")) && keyboard_check(vk_lshift) && jump_current < 2)
 {
-    sprite_index = spr_RedSlimeJump;
-	image_xscale = -scale;
+    if(vsp < 0) 
+	{
+		sprite_index = spr_RedSlimeJumpUp;
+		image_xscale = -scale;
+	}
 	
+	if(vsp == 0) 
+	{
+		sprite_index = spr_RedSlimeJumpDown;
+		image_xscale = -scale;
+	}
+	
+		
 	// Movement when not Colliding between players
 	
 	if(!place_meeting(x+hsp,y,obj_BlueSlimeIdle)) 
@@ -157,8 +177,18 @@ if (keyboard_check(ord("D")) && jump_current == 2)
 if (keyboard_check(ord("D")) && jump_current < 2)
 {
    	
-	sprite_index = spr_RedSlimeJump;
-	image_xscale = scale;
+	if(vsp < 0) 
+	{
+		sprite_index = spr_RedSlimeJumpUp;
+		image_xscale = scale;
+	}
+	
+	if(vsp == 0) 
+	{
+		sprite_index = spr_RedSlimeJumpDown;
+		image_xscale = scale;
+	}
+	
 	
 	// Movement when not Colliding between players
 	
@@ -188,8 +218,18 @@ if(keyboard_check(ord("D")) && keyboard_check(vk_lshift) && jump_current == 2)
 
 if(keyboard_check(ord("D")) && keyboard_check(vk_lshift) && jump_current < 2)
 {
-    sprite_index = spr_RedSlimeJump;
-	image_xscale = scale;
+    if(vsp < 0) 
+	{
+		sprite_index = spr_RedSlimeJumpUp;
+		image_xscale = scale;
+	}
+	
+	if(vsp == 0) 
+	{
+		sprite_index = spr_RedSlimeJumpDown;
+		image_xscale = scale;
+	}
+	
 	
 	// Movement when not Colliding between players
 	
@@ -205,11 +245,15 @@ if (keyboard_check_pressed(ord("W")) && jump_current > 0)
 {
     //motion_set(90,10);
 	
-	sprite_index = spr_RedSlimeJump;
+	sprite_index = spr_RedSlimeJumpUp;
 	vsp = -10;
 	jump_current--;
 }
 
+if(vsp == 0) 
+{
+	sprite_index = spr_RedSlimeJumpDown;
+}
 
 
 //Player collision
