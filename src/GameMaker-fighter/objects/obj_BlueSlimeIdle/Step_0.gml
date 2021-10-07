@@ -243,7 +243,14 @@ if(place_meeting(x+hsp,y,obj_RedSlimeIdle))
 	hsp = 0;
 }
 
+// collision with PowerUp
 
+if (place_meeting(x+hsp,y,obj_PowerUp))
+{
+	instance_deactivate_object(obj_PowerUp);
+	scale += 0.2;
+	
+}
 
 
 //Vertical collision 
@@ -260,6 +267,9 @@ if (place_meeting(x,y+vsp,obj_PlatformPlaceholder))
 	vsp = 0;
 }
 y = y + vsp;
+
+
+
 
 //Horizontal collision 
 if (place_meeting(x+hsp,y,obj_PlatformPlaceholder))
