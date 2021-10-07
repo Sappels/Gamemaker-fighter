@@ -5,7 +5,11 @@ if (hover == 1)
 	sprite_index = spr_ControlsButtonSelected;
 	if(mouse_check_button_pressed(mb_left)) 
 	{
-		// insert code for Controls "Room"
+		if(audio_is_playing(global.MenuSound))
+		{
+			audio_stop_sound(global.MenuSound);
+		}
+		room_goto(RoomControls);
 	}
 }
 
