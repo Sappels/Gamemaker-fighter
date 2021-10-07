@@ -37,6 +37,29 @@ if(keyboard_check_pressed(ord("V")))
 	
 }
 
+if(keyboard_check_pressed(ord("C"))) 
+{
+	
+sprite_index = spr_RedSlimeHit;
+
+if(image_xscale == scale) 
+{
+	
+var PunchBox = instance_create_layer(x,y, "instances", obj_PunchBox2);
+	PunchBox.direction = image_angle;
+	
+}
+if(image_xscale == -scale) 
+{
+	
+var PunchBox = instance_create_layer(x,y, "instances", obj_PunchBox2);
+	PunchBox.direction = image_angle + 180;
+	
+}	
+}
+
+
+
 
 //gravity
 //y += 0.98 * delta_time / 5000;
