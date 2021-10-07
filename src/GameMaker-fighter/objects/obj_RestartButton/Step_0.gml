@@ -5,6 +5,7 @@ if (hover == 1)
 	sprite_index = spr_RestartButtonSelected;
 	if(mouse_check_button_pressed(mb_left)) 
 	{
+		audio_stop_sound(global.bgMusic);
 		room_goto(Room1);
 		
 		

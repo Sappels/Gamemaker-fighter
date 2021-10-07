@@ -1,1 +1,0 @@
-if (point_distance(x, y, xstart, ystart) > range) { instance_destroy(); }
