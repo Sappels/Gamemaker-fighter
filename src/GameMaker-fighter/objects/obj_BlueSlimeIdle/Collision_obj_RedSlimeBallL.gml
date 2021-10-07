@@ -8,8 +8,9 @@ image_yscale = scale;
 
 }
 
-if(image_xscale == 0.3 || image_yscale == 0.3) 
+if(scale == 0.3) 
 
 {
-	
+	audio_stop_sound(global.bgMusic); 
+	room_goto(Room1End);
 }

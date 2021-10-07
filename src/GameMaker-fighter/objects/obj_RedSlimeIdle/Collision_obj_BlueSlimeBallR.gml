@@ -8,6 +8,13 @@ image_yscale = scale;
 
 }
 
+if(scale == 0.3) 
+{
+		
+	audio_stop_sound(global.bgMusic); 
+	room_goto(Room1End);
+
+}
 
 
 
