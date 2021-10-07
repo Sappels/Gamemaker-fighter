@@ -1,7 +1,7 @@
 
 draw_self();
 
-if(scale == 0.3) 
+if(scale < 0.3) 
 {
 
 draw_set_font(-1);

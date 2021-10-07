@@ -22,7 +22,6 @@ if(keyboard_check_pressed(vk_rcontrol))
 }
 
 
-
 //gravity
 //y += 0.98 * delta_time / 5000;
 vsp = vsp + grv;
