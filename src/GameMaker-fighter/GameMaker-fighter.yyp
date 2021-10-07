@@ -51,6 +51,7 @@
     {"id":{"name":"spr_RedSlimeBallR","path":"sprites/spr_RedSlimeBallR/spr_RedSlimeBallR.yy",},"order":2,},
     {"id":{"name":"spr_BlueSlimeIdle","path":"sprites/spr_BlueSlimeIdle/spr_BlueSlimeIdle.yy",},"order":3,},
     {"id":{"name":"spr_RedSlimeBallL","path":"sprites/spr_RedSlimeBallL/spr_RedSlimeBallL.yy",},"order":16,},
+    {"id":{"name":"spr_Paused","path":"sprites/spr_Paused/spr_Paused.yy",},"order":48,},
     {"id":{"name":"spr_StartMenuTest","path":"sprites/spr_StartMenuTest/spr_StartMenuTest.yy",},"order":26,},
     {"id":{"name":"obj_RedSlimeBallL","path":"objects/obj_RedSlimeBallL/obj_RedSlimeBallL.yy",},"order":5,},
     {"id":{"name":"obj_ReturnButton","path":"objects/obj_ReturnButton/obj_ReturnButton.yy",},"order":15,},
@@ -76,6 +77,7 @@
     {"id":{"name":"Background_Stars_tiles__1_","path":"sprites/Background_Stars_tiles__1_/Background_Stars_tiles__1_.yy",},"order":10,},
     {"id":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},"order":7,},
     {"id":{"name":"spr_PunchBox2","path":"sprites/spr_PunchBox2/spr_PunchBox2.yy",},"order":38,},
+    {"id":{"name":"obj_Paused","path":"objects/obj_Paused/obj_Paused.yy",},"order":16,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
