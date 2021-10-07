@@ -21,6 +21,25 @@ if(keyboard_check_pressed(vk_rcontrol))
 	
 }
 
+// Hit Animation
+
+if(keyboard_check(vk_numpad0)) 
+{
+	sprite_index = spr_BlueSlimeHit;
+
+	if(image_xscale == scale) 
+	{
+		var PunchBox = instance_create_layer(x,y, "instances", obj_PunchBox);
+		PunchBox.direction = image_angle;
+	}
+	
+	if(image_xscale == -scale) 
+	{
+	var PunchBox = instance_create_layer(x,y, "instances", obj_PunchBox);
+	PunchBox.direction = image_angle + 180;
+	}	
+}
+
 
 //gravity
 //y += 0.98 * delta_time / 5000;
@@ -29,7 +48,7 @@ vsp = vsp + grv;
 
 // idle animation when not moving left or right
 
-if(!keyboard_check(vk_left) && jump_current == 2 || !keyboard_check(vk_right) && jump_current == 2) 
+if(!keyboard_check(vk_left) && jump_current == 2 && !keyboard_check(vk_numpad0) || !keyboard_check(vk_right) && jump_current == 2 && !keyboard_check(vk_numpad0)) 
 {
 	
 	

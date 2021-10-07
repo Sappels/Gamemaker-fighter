@@ -39,25 +39,21 @@ if(keyboard_check_pressed(ord("V")))
 
 // Hit Animation
 
-if(keyboard_check_pressed(ord("C"))) 
+if(keyboard_check(ord("C"))) 
 {
-	
-sprite_index = spr_RedSlimeHit;
+	sprite_index = spr_RedSlimeHit;
 
-//if(image_xscale == scale) 
-//{
+	if(image_xscale == scale) 
+	{
+		var PunchBox = instance_create_layer(x,y, "instances", obj_PunchBox2);
+		PunchBox.direction = image_angle;
+	}
 	
-//var PunchBox = instance_create_layer(x,y, "instances", obj_PunchBox2);
-//	PunchBox.direction = image_angle;
-	
-//}
-//if(image_xscale == -scale) 
-//{
-	
-//var PunchBox = instance_create_layer(x,y, "instances", obj_PunchBox2);
-//	PunchBox.direction = image_angle + 180;
-	
-//}	
+	if(image_xscale == -scale) 
+	{
+	var PunchBox = instance_create_layer(x,y, "instances", obj_PunchBox2);
+	PunchBox.direction = image_angle + 180;
+	}	
 }
 
 
@@ -69,9 +65,9 @@ vsp = vsp + grv;
 
 // idle animation when not moving left or right
 
-if(!keyboard_check(ord("A")) && jump_current == 2 || !keyboard_check(ord("D")) && jump_current == 2)
+if(!keyboard_check(ord("A")) && jump_current == 2 && !keyboard_check(ord("C")) || !keyboard_check(ord("D")) && jump_current == 2 && !keyboard_check(ord("C")) )
 {
-	// sprite_index = spr_RedSlimeIdle;
+	sprite_index = spr_RedSlimeIdle;
 	hsp = 0;
 	
 	
