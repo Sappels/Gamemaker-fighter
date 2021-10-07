@@ -40,8 +40,6 @@ if(keyboard_check_pressed(ord("V")))
 
 // Hit Animation
 
-if(keyboard_check(ord("C"))) 
-
 if(keyboard_check_pressed(ord("C"))) 
 
 {
@@ -58,22 +56,7 @@ if(keyboard_check_pressed(ord("C")))
 	{
 	var PunchBox = instance_create_layer(x,y, "instances", obj_PunchBox2);
 	PunchBox.direction = image_angle + 180;
-	}	
-
-if(image_xscale == scale) 
-{
-	
-var PunchBox = instance_create_layer(x,y, "instances", obj_PunchBox2);
-	PunchBox.direction = image_angle;
-	
-}
-if(image_xscale == -scale) 
-{
-	
-var PunchBox = instance_create_layer(x,y, "instances", obj_PunchBox2);
-	PunchBox.direction = image_angle + 180;
-	
-}	
+	}		
 
 }
 

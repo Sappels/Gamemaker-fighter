@@ -4,7 +4,7 @@
     "path": "sprites/spr_PunchBox/spr_PunchBox.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
