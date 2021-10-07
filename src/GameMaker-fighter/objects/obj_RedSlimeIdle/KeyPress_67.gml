@@ -1,5 +1,7 @@
 /// @description Punchbox
 
+//sprite_index = spr_RedSlimeHit;
+
 if(image_xscale == scale) 
 {
 	

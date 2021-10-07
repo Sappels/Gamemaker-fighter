@@ -1,5 +1,10 @@
 
 
+if(keyboard_check(ord("C")))
+{
+	sprite_index = spr_RedSlimeHit;
+}
+
 //Shoot function
 
 
