@@ -1,25 +1,37 @@
 //isGrounded = place_meeting(x, y + 1, obj_PlatformPlaceholder);
 
+canShoot -= 1;
+
 //Shoot function
 if(keyboard_check_pressed(vk_rcontrol)) 
 {
 	
-	
-	if(image_xscale = scale) 
+	if(canShoot <= 0) 
 	{
-		var slimeBallL = instance_create_layer(x,y, "instances", obj_BlueSlimeBallL);
-		slimeBallL.direction = image_angle + 180;
-		audio_play_sound(sfx_SlimeBall, 0, false);
+	
+		if(image_xscale = scale) 
+		{
+			var slimeBallL = instance_create_layer(x,y, "instances", obj_BlueSlimeBallL);
+			slimeBallL.direction = image_angle + 180;
+			audio_play_sound(sfx_SlimeBall, 0, false);
+		}
+	
+		if(image_xscale = -scale) 
+		{
+			var slimeBallR = instance_create_layer(x,y, "instances", obj_BlueSlimeBallR);
+			slimeBallR.direction = image_angle;
+			audio_play_sound(sfx_SlimeBall, 0, false);
+		}
+		
+		canShoot = (0.3 * room_speed);
 	}
 	
-	if(image_xscale = -scale) 
-	{
-		var slimeBallR = instance_create_layer(x,y, "instances", obj_BlueSlimeBallR);
-		slimeBallR.direction = image_angle;
-		audio_play_sound(sfx_SlimeBall, 0, false);
-	}
 	
+
+
 }
+
+
 
 // Hit Animation
 

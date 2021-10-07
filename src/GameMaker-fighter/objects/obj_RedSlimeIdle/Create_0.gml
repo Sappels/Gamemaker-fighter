@@ -10,4 +10,4 @@ scale = 1;
 jump_number     = 2; //How many jumps the player can make
 jump_current    = 0; //How many jumps the player has remaining
 
-
+canShoot = 0; 

@@ -16,4 +16,6 @@ global.bgMusic = audio_play_sound(blobbrawl_bgmusic,1,true);
 global.blueSlimeWon = false;
 global.redSlimeWon = false;
 
+canShoot = 0; 
+
 

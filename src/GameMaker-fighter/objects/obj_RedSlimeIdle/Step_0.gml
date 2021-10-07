@@ -8,32 +8,33 @@
 
 //Shoot function
 
+canShoot -= 1;
+
 
 if(keyboard_check_pressed(ord("V"))) 
 {
-	sprite_index = spr_RedSlimeShoot;
+	if(canShoot <= 0) 
+	{
 	
-	
-	
-	if(image_xscale = scale) 
+		if(image_xscale = scale) 
 
-	{
+		{
+			var slimeBallR = instance_create_layer(x,y, "instances", obj_RedSlimeBallR);
+			slimeBallR.direction = image_angle;
+			audio_play_sound(sfx_SlimeBall, 0, false);
+		}
 	
-	var slimeBallR = instance_create_layer(x,y, "instances", obj_RedSlimeBallR);
-	slimeBallR.direction = image_angle;
-	audio_play_sound(sfx_SlimeBall, 0, false);
+		if(image_xscale == -scale) 
+		{
 	
+			var slimeBallL = instance_create_layer(x,y, "instances", obj_RedSlimeBallL);
+			slimeBallL.direction = image_angle + 180;
+			audio_play_sound(sfx_SlimeBall, 0, false);
+	
+		}
+	
+		canShoot = (0.3 * room_speed);
 	}
-	
-	if(image_xscale == -scale) 
-	{
-	
-	var slimeBallL = instance_create_layer(x,y, "instances", obj_RedSlimeBallL);
-	slimeBallL.direction = image_angle + 180;
-	audio_play_sound(sfx_SlimeBall, 0, false);
-	
-	}
-	
 	
 }
 
