@@ -1,13 +1,15 @@
 
 
+
 // Game Over Screen
+
 
 
 
 //Shoot function
 
 
-if(keyboard_check_pressed(vk_lcontrol)) 
+if(keyboard_check_pressed(ord("V"))) 
 {
 	sprite_index = spr_RedSlimeShoot;
 	
@@ -31,7 +33,6 @@ if(keyboard_check_pressed(vk_lcontrol))
 	audio_play_sound(sfx_SlimeBall, 0, false);
 	
 	}
-	
 	
 	
 }
