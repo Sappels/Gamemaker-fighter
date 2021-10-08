@@ -82,7 +82,7 @@ if(!keyboard_check(ord("A")) && jump_current == 2 && !keyboard_check(ord("C")) &
 }
 
 
-if (keyboard_check(ord("A")) && jump_current == 2)
+if (keyboard_check(ord("A")) && jump_current == 2 && !keyboard_check(ord("V")))
 {
     sprite_index = spr_RedSlimeRun;
 	image_xscale = -scale;
@@ -122,7 +122,7 @@ if (keyboard_check(ord("A")) && jump_current < 2)
 
 // sprint left
 
-if(keyboard_check(ord("A")) && keyboard_check(vk_lshift) && jump_current == 2)
+if(keyboard_check(ord("A")) && keyboard_check(vk_lshift) && jump_current == 2  && !keyboard_check(ord("V")))
 {
     sprite_index = spr_RedSlimeSprint;
 	image_xscale = -scale;
@@ -162,7 +162,7 @@ if(keyboard_check(ord("A")) && keyboard_check(vk_lshift) && jump_current < 2)
 	
 }
 
-if (keyboard_check(ord("D")) && jump_current == 2)
+if (keyboard_check(ord("D")) && jump_current == 2  && !keyboard_check(ord("V")))
 {
    	
 	sprite_index = spr_RedSlimeRun;
@@ -204,7 +204,7 @@ if (keyboard_check(ord("D")) && jump_current < 2)
 
 // sprint right
 
-if(keyboard_check(ord("D")) && keyboard_check(vk_lshift) && jump_current == 2)
+if(keyboard_check(ord("D")) && keyboard_check(vk_lshift) && jump_current == 2  && !keyboard_check(ord("V")))
 {
     sprite_index = spr_RedSlimeSprint;
 	image_xscale = scale;

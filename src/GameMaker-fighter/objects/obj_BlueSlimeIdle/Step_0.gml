@@ -81,7 +81,7 @@ if(!keyboard_check(vk_left) && jump_current == 2 && !keyboard_check(vk_numpad0) 
 
 //movement
 
-if (keyboard_check(vk_left) && jump_current == 2)
+if (keyboard_check(vk_left) && jump_current == 2 && !keyboard_check(vk_rcontrol))
 {
     sprite_index = spr_BlueSlimeRun;
 	image_xscale = scale;
@@ -128,7 +128,7 @@ if (keyboard_check(vk_left) && jump_current < 2)
 
 // sprint left
 
-if(keyboard_check(vk_left) && keyboard_check(vk_rshift))
+if(keyboard_check(vk_left) && keyboard_check(vk_rshift)  && !keyboard_check(vk_rcontrol))
 {
     sprite_index = spr_BlueSlimeSprint;
 	image_xscale = scale;
@@ -175,7 +175,7 @@ if(keyboard_check(vk_left) && keyboard_check(vk_rshift) && jump_current < 2)
 }
 
 
-if (keyboard_check(vk_right) && jump_current == 2)
+if (keyboard_check(vk_right) && jump_current == 2 && !keyboard_check(vk_rcontrol))
 {
     
 	
@@ -225,7 +225,7 @@ if (keyboard_check(vk_right) && jump_current < 2)
 
 // sprint right
 
-if(keyboard_check(vk_right) && keyboard_check(vk_rshift) && jump_current == 2)
+if(keyboard_check(vk_right) && keyboard_check(vk_rshift) && jump_current == 2  && !keyboard_check(vk_rcontrol))
 {
     
 	sprite_index = spr_BlueSlimeSprint;
