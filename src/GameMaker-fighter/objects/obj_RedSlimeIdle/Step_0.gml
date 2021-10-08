@@ -11,12 +11,15 @@
 canShoot -= 1;
 
 
-if(keyboard_check_pressed(ord("V"))) 
+if(keyboard_check(ord("V"))) // was _pressed
 {
+	
+	
 	if(canShoot <= 0) 
 	{
-	
-		if(image_xscale = scale) 
+		sprite_index = spr_RedSlimeShoot;
+		
+		if(image_xscale == scale) 
 
 		{
 			var slimeBallR = instance_create_layer(x,y, "instances", obj_RedSlimeBallR);
@@ -33,7 +36,7 @@ if(keyboard_check_pressed(ord("V")))
 	
 		}
 	
-		canShoot = (0.3 * room_speed);
+		canShoot = (0.5 * room_speed);
 	}
 	
 }
@@ -70,7 +73,7 @@ vsp = vsp + grv;
 
 // idle animation when not moving left or right
 
-if(!keyboard_check(ord("A")) && jump_current == 2 && !keyboard_check(ord("C")) || !keyboard_check(ord("D")) && jump_current == 2 && !keyboard_check(ord("C")) )
+if(!keyboard_check(ord("A")) && jump_current == 2 && !keyboard_check(ord("C")) && !keyboard_check(ord("V")) || !keyboard_check(ord("D")) && jump_current == 2 && !keyboard_check(ord("C")) && !keyboard_check(ord("V")) )
 {
 	sprite_index = spr_RedSlimeIdle;
 	hsp = 0;
