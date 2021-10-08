@@ -3,27 +3,29 @@
 canShoot -= 1;
 
 //Shoot function
-if(keyboard_check_pressed(vk_rcontrol)) 
+if(keyboard_check(vk_rcontrol)) 
 {
 	
 	if(canShoot <= 0) 
 	{
 	
-		if(image_xscale = scale) 
+		sprite_index = spr_BlueSlimeShoot;
+	
+		if(image_xscale == scale) 
 		{
 			var slimeBallL = instance_create_layer(x,y, "instances", obj_BlueSlimeBallL);
 			slimeBallL.direction = image_angle + 180;
 			audio_play_sound(sfx_SlimeBall, 0, false);
 		}
 	
-		if(image_xscale = -scale) 
+		if(image_xscale == -scale) 
 		{
 			var slimeBallR = instance_create_layer(x,y, "instances", obj_BlueSlimeBallR);
 			slimeBallR.direction = image_angle;
 			audio_play_sound(sfx_SlimeBall, 0, false);
 		}
 		
-		canShoot = (0.3 * room_speed);
+		canShoot = (0.5 * room_speed);
 	}
 	
 	
@@ -65,7 +67,7 @@ vsp = vsp + grv;
 
 // idle animation when not moving left or right
 
-if(!keyboard_check(vk_left) && jump_current == 2 && !keyboard_check(vk_numpad0) || !keyboard_check(vk_right) && jump_current == 2 && !keyboard_check(vk_numpad0)) 
+if(!keyboard_check(vk_left) && jump_current == 2 && !keyboard_check(vk_numpad0) && !keyboard_check(vk_rcontrol) || !keyboard_check(vk_right) && jump_current == 2 && !keyboard_check(vk_numpad0) && !keyboard_check(vk_rcontrol)) 
 {
 	
 	

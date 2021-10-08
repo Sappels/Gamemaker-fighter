@@ -20,6 +20,7 @@
     {"id":{"name":"obj_Room1End","path":"objects/obj_Room1End/obj_Room1End.yy",},"order":19,},
     {"id":{"name":"spr_StartMenuTest2","path":"sprites/spr_StartMenuTest2/spr_StartMenuTest2.yy",},"order":44,},
     {"id":{"name":"spr_RedSlimeSprint","path":"sprites/spr_RedSlimeSprint/spr_RedSlimeSprint.yy",},"order":8,},
+    {"id":{"name":"spr_BlueSlimeShoot","path":"sprites/spr_BlueSlimeShoot/spr_BlueSlimeShoot.yy",},"order":55,},
     {"id":{"name":"spr_PunchBox","path":"sprites/spr_PunchBox/spr_PunchBox.yy",},"order":31,},
     {"id":{"name":"spr_GameOver","path":"sprites/spr_GameOver/spr_GameOver.yy",},"order":43,},
     {"id":{"name":"spr_ReturnButtonSelected","path":"sprites/spr_ReturnButtonSelected/spr_ReturnButtonSelected.yy",},"order":48,},
